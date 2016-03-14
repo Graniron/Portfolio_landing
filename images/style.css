@@ -1,0 +1,388 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*  End of reset  */
+/*  Clearfix  */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/*   End of clearfix  */
+/*General styles*/
+body {
+  width: 100%;
+  min-width: 1240px; }
+
+a {
+  text-decoration: none; }
+
+/**/
+/*  Style of Header  */
+header {
+  margin-bottom: 0;
+  padding-top: 20px;
+  position: relative;
+  width: 100%;
+  height: 892px;
+  background: url(../images/sunset.jpg) no-repeat; }
+  header i, header p, header h1, header a {
+    color: white; }
+
+.social {
+  float: left;
+  margin-left: 5%; }
+  .social a {
+    opacity: 0.5;
+    transition: all  ease-in-out 0.3s; }
+    .social a:hover {
+      opacity: 1; }
+  .social i {
+    font-size: 1.5em; }
+
+nav {
+  float: right;
+  margin-right: 5%; }
+
+.main_navigation li {
+  display: inline-block;
+  margin-left: 40px; }
+  .main_navigation li a {
+    font-size: 1.3em;
+    font-family: "Lato";
+    text-transform: uppercase;
+    opacity: 0.5;
+    transition: all  ease-in-out 0.3s; }
+
+.main_navigation li a:hover {
+  border-bottom: 1px solid white;
+  opacity: 1; }
+
+.site_greeting {
+  clear: both;
+  width: 100%;
+  position: absolute;
+  top: 40%; }
+  .site_greeting h1 {
+    font-size: 6em;
+    text-align: center;
+    margin-bottom: 30px; }
+  .site_greeting p {
+    font-size: 3em;
+    text-align: center; }
+
+/*  End of Header  */
+/*  About section  */
+main {
+  margin-top: -10px; }
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 892px;
+  background: #f3f3f3; }
+
+.about_wrapper {
+  position: absolute;
+  top: 15%;
+  width: 100%; }
+
+.about_wrapper h2 {
+  font-size: 2em;
+  font-family: "Lato";
+  color: #515151;
+  line-height: 3;
+  text-align: center;
+  text-transform: uppercase; }
+
+.about_wrapper img {
+  border-radius: 30%;
+  display: block;
+  margin: 0 auto 20px; }
+
+.about_wrapper p {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.1em;
+  font-family: "Lato";
+  color: #515151;
+  font-style: italic; }
+
+/*  Proficiency section  */
+.proficiency {
+  width: 100%;
+  height: 892px;
+  background-color: #222222;
+  color: white;
+  padding-top: 50px; }
+
+.proficiency h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 80px; }
+
+.skills {
+  margin-left: 23px; }
+
+.html_skill,
+.css_skill,
+.js_skill,
+.jq_skill {
+  background-size: 300px 300px;
+  height: 300px;
+  position: relative;
+  width: 300px;
+  float: left; }
+
+.html_logo,
+.css_logo,
+.js_logo,
+.jq_logo {
+  position: absolute;
+  top: 24%;
+  left: 29%;
+  width: 40%; }
+
+.html_skill {
+  background: url(../images/chart70.png); }
+
+.css_skill {
+  background: url(../images/chart75.png); }
+
+.js_skill {
+  background: url(../images/chart50.png); }
+
+.jq_skill {
+  background: url(../images/chart65.png); }
+
+.scill_level {
+  font-size: 2em;
+  position: absolute;
+  top: 65%;
+  left: 36%; }
+
+/*Before work*/
+/* .html_skill,
+.css_skill,
+.js_skill,
+.jq_skill {
+	position: relative;
+	width: 26%;
+	height: 290px;	
+	height: auto;
+	border-radius: 50%;
+	background: #ffffff;
+	float: left;
+	margin-left: 16%;
+	margin-bottom: 30px;
+}
+
+.html_skill {	
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 0%, #ffffff 1%, #ffffff 1%, #ffffff 1%, #ffffff 30%, #f2f230 40%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(0%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(30%,#ffffff), color-stop(40%,#f2f230));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 30%,#f2f230 40%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 30%,#f2f230 40%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 30%,#f2f230 40%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 30%,#f2f230 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f230',GradientType=0 );
+}
+
+.css_skill {	
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 0%, #ffffff 1%, #ffffff 1%, #ffffff 1%, #ffffff 24%, #f2f230 40%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(0%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(30%,#ffffff), color-stop(40%,#f2f230));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 24%,#f2f230 40%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 24%,#f2f230 40%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 24%,#f2f230 40%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 24%,#f2f230 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f230',GradientType=0 );
+}
+
+.js_skill {	
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 0%, #ffffff 0%, #ffffff 1%, #ffffff 1%, #ffffff 1%, #ffffff 25%, #ffffff 26%, #ffffff 48%, #f2f230 57%, #f2f230 57%, #f2f230 99%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(0%,#ffffff), color-stop(0%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(25%,#ffffff), color-stop(26%,#ffffff), color-stop(48%,#ffffff), color-stop(57%,#f2f230), color-stop(57%,#f2f230), color-stop(99%,#f2f230));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 25%,#ffffff 26%,#ffffff 48%,#f2f230 57%,#f2f230 57%,#f2f230 99%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 25%,#ffffff 26%,#ffffff 48%,#f2f230 57%,#f2f230 57%,#f2f230 99%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 25%,#ffffff 26%,#ffffff 48%,#f2f230 57%,#f2f230 57%,#f2f230 99%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 25%,#ffffff 26%,#ffffff 48%,#f2f230 57%,#f2f230 57%,#f2f230 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f230',GradientType=0 );
+
+}
+
+.jq_skill {	
+	background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 0%, #ffffff 1%, #ffffff 1%, #ffffff 1%, #ffffff 35%, #f2f230 40%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(0%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(1%,#ffffff), color-stop(30%,#ffffff), color-stop(40%,#f2f230));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 35%,#f2f230 40%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 35%,#f2f230 40%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 35%,#f2f230 40%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 0%,#ffffff 1%,#ffffff 1%,#ffffff 1%,#ffffff 35%,#f2f230 40%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f230',GradientType=0 );
+}
+
+
+.skill_description {
+	width: 100%;	
+	position: absolute;
+	top: 50%;
+	display: block;
+	text-align: center;
+	font-size: 1.5rem;
+	-webkit-text-stroke: 0.5px grey;
+}
+
+.skill_description img {
+	width: 30%;
+	height: 30%;
+}
+ */
+.another_tools {
+  margin-top: 135px;
+  width: 100%;
+  clear: both; }
+  .another_tools p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: 'Lato'; }
+
+.tools_list {
+  width: 100%; }
+
+.tools_list li {
+  display: inline-block;
+  margin-left: 10%; }
+  .tools_list li img {
+    width: 100px;
+    height: 100px;
+    display: inline-block; }
+
+/*  Hobbies section  */
+.hobbies {
+  width: 100%;
+  height: 792px;
+  padding-top: 150px; }
+  .hobbies h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #333333;
+    line-height: 3.333;
+    margin-bottom: 50px; }
+
+.interests {
+  margin-left: 35px; }
+
+.hobby {
+  width: 293px;
+  height: 293px;
+  display: inline-block; }
+
+.football {
+  background: url(../images/romb.png), url(../images/ball.png) no-repeat 78px 78px; }
+
+.books {
+  background: url(../images/romb.png), url(../images/book.png) no-repeat 78px 78px; }
+
+.chess {
+  background: url(../images/romb.png), url(../images/chess.png) no-repeat 78px 78px; }
+
+.tennis {
+  background: url(../images/romb.png), url(../images/tennis.png) no-repeat 78px 78px; }
+
+/*  Footer  */
+footer {
+  position: relative; }
+
+/*  Contacts  */
+.contacts {
+  width: 100%;
+  height: 695px;
+  background: url(../images/mountain.jpg); }
+  .contacts h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 70px; }
+
+.contact_list li {
+  text-align: left;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+
+.contact_list a {
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 2px; }
+
+.envelope:before,
+.tel:before,
+.skype:before {
+  font-family: FontAwesome;
+  padding-right: 20px; }
+
+.envelope:before {
+  content: "\f003"; }
+
+.tel:before {
+  content: "\f095"; }
+
+.skype:before {
+  content: "\f17e"; }
+
+footer .social {
+  float: none;
+  margin: 70px 0 0 0;
+  text-align: center; }
+  footer .social i {
+    color: white;
+    font-size: 3em; }
+
+/*# sourceMappingURL=style.css.map */
